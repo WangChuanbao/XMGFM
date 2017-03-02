@@ -1,0 +1,6 @@
+framework module XMGFMHomeCategory {
+  umbrella header "XMGFMHomeCategory-umbrella.h"
+
+  export *
+  module * { export * }
+}

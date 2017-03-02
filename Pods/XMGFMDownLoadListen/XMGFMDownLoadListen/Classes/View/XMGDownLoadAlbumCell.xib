@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="68" id="KGk-i7-Jjw" customClass="XMGDownLoadAlbumCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XMGFMDownLoadListen.bundle/find_albumcell_cover_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ge3-0y-baD">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="K89-VL-kUB"/>
+                            <constraint firstAttribute="width" constant="50" id="XSk-nW-tNX"/>
+                            <constraint firstAttribute="width" secondItem="ge3-0y-baD" secondAttribute="height" multiplier="1:1" id="fZ7-l9-jmg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="K89-VL-kUB"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="心有千千结" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMz-pO-8Kf">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="by 黄埔系傲娇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixz-Wy-54h">
+                        <frame key="frameInset" minX="66" minY="26" width="77.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTQ-bF-DXN">
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="4 集" image="XMGFMDownLoadListen.bundle/album_tracks">
+                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIZ-tN-R7U">
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="17.5M" image="XMGFMDownLoadListen.bundle/sound_sizes">
+                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dri-fL-Z0w">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="5L6-si-xQo"/>
+                            <constraint firstAttribute="width" constant="30" id="VkU-Te-t2D"/>
+                        </constraints>
+                        <state key="normal" image="XMGFMDownLoadListen.bundle/deleteCell_h"/>
+                        <connections>
+                            <action selector="delete" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ipc-E4-eGX"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ge3-0y-baD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6vx-BF-hQx"/>
+                    <constraint firstItem="Ixz-Wy-54h" firstAttribute="leading" secondItem="KMz-pO-8Kf" secondAttribute="leading" id="BjX-nl-Duc"/>
+                    <constraint firstItem="XTQ-bF-DXN" firstAttribute="leading" secondItem="Ixz-Wy-54h" secondAttribute="leading" id="GrA-fo-NYk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="KMz-pO-8Kf" secondAttribute="trailing" constant="30" id="IAi-oL-tOI"/>
+                    <constraint firstItem="Ixz-Wy-54h" firstAttribute="top" secondItem="KMz-pO-8Kf" secondAttribute="bottom" id="OV4-KO-RZK"/>
+                    <constraint firstItem="KMz-pO-8Kf" firstAttribute="leading" secondItem="ge3-0y-baD" secondAttribute="trailing" constant="8" id="Onp-fh-fgC"/>
+                    <constraint firstItem="DIZ-tN-R7U" firstAttribute="leading" secondItem="XTQ-bF-DXN" secondAttribute="trailing" constant="13" id="QhG-Kd-t9S"/>
+                    <constraint firstItem="DIZ-tN-R7U" firstAttribute="centerY" secondItem="XTQ-bF-DXN" secondAttribute="centerY" id="a1O-Lk-CSX"/>
+                    <constraint firstItem="KMz-pO-8Kf" firstAttribute="top" secondItem="ge3-0y-baD" secondAttribute="top" id="a4M-7c-X8C"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Dri-fL-Z0w" secondAttribute="trailing" constant="10" id="maq-dw-iZS"/>
+                    <constraint firstItem="XTQ-bF-DXN" firstAttribute="top" secondItem="Ixz-Wy-54h" secondAttribute="bottom" constant="4" id="pJH-IB-ySa"/>
+                    <constraint firstItem="ge3-0y-baD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="zV0-9G-geS"/>
+                    <constraint firstItem="Dri-fL-Z0w" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ziM-Ob-JKj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="albumAuthorLabel" destination="Ixz-Wy-54h" id="I5T-7W-31G"/>
+                <outlet property="albumImageView" destination="ge3-0y-baD" id="Xf8-N3-Uex"/>
+                <outlet property="albumPartsBtn" destination="XTQ-bF-DXN" id="IWw-a5-oYF"/>
+                <outlet property="albumPartsSizeBtn" destination="DIZ-tN-R7U" id="SUu-Zj-6Ao"/>
+                <outlet property="albumTitleLabel" destination="KMz-pO-8Kf" id="GZj-OV-6RF"/>
+            </connections>
+            <point key="canvasLocation" x="224" y="214"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="XMGFMDownLoadListen.bundle/album_tracks" width="90" height="90"/>
+        <image name="XMGFMDownLoadListen.bundle/deleteCell_h" width="38" height="38"/>
+        <image name="XMGFMDownLoadListen.bundle/find_albumcell_cover_bg" width="38" height="38"/>
+        <image name="XMGFMDownLoadListen.bundle/sound_sizes" width="90" height="90"/>
+    </resources>
+</document>

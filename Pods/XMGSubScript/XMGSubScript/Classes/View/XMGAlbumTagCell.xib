@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="XMGAlbumTagCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="专辑标签" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPX-9s-phT">
+                        <frame key="frameInset" minX="15" minY="10" width="56" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSe-lT-3eT">
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCg-Jn-Uyy">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="标签">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tagButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Dss-0W-Qgu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="95T-Ci-9R7"/>
+                            <constraint firstAttribute="bottom" secondItem="GCg-Jn-Uyy" secondAttribute="bottom" id="OEi-ea-dn4"/>
+                            <constraint firstItem="GCg-Jn-Uyy" firstAttribute="leading" secondItem="MSe-lT-3eT" secondAttribute="leading" id="W14-V8-sE8"/>
+                            <constraint firstAttribute="trailing" secondItem="GCg-Jn-Uyy" secondAttribute="trailing" id="dwR-TB-SfL"/>
+                            <constraint firstItem="GCg-Jn-Uyy" firstAttribute="top" secondItem="MSe-lT-3eT" secondAttribute="top" id="sB1-UH-7eF"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hg9-L7-hMy">
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="aYW-f3-aJR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hg9-L7-hMy" secondAttribute="trailing" id="EUG-ZP-vJk"/>
+                    <constraint firstItem="hg9-L7-hMy" firstAttribute="top" secondItem="MSe-lT-3eT" secondAttribute="bottom" constant="10" id="H2h-bc-dly"/>
+                    <constraint firstAttribute="trailing" secondItem="MSe-lT-3eT" secondAttribute="trailing" constant="15" id="TSy-PI-J67"/>
+                    <constraint firstItem="MSe-lT-3eT" firstAttribute="top" secondItem="kPX-9s-phT" secondAttribute="bottom" constant="10" id="Ytg-tI-1oC"/>
+                    <constraint firstItem="MSe-lT-3eT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="a48-R8-QCP"/>
+                    <constraint firstItem="kPX-9s-phT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bWh-OC-BjC"/>
+                    <constraint firstItem="hg9-L7-hMy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gFA-sJ-ehf"/>
+                    <constraint firstItem="kPX-9s-phT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="uxC-lA-RLG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="tagButton" destination="GCg-Jn-Uyy" id="YAt-Te-l3k"/>
+                <outlet property="tagButtonView" destination="MSe-lT-3eT" id="x29-ae-Kra"/>
+            </connections>
+            <point key="canvasLocation" x="385" y="124"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="timeCell" id="6yY-M8-OwK" customClass="XMGTimeLabel">
+            <rect key="frame" x="0.0" y="0.0" width="61" height="16"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="61" height="16"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XMGFMMine.bundle/img_rec_scale_4" translatesAutoresizingMaskIntoConstraints="NO" id="aKF-fv-84v"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxV-lz-e2L">
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.84452730417251587" green="0.84468936920166016" blue="0.84450006484985352" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IxV-lz-e2L" secondAttribute="bottom" id="2He-08-6cR"/>
+                <constraint firstAttribute="bottom" secondItem="aKF-fv-84v" secondAttribute="bottom" id="FYR-Hc-l9c"/>
+                <constraint firstItem="aKF-fv-84v" firstAttribute="top" secondItem="6yY-M8-OwK" secondAttribute="top" id="IiV-Zm-3Bc"/>
+                <constraint firstItem="IxV-lz-e2L" firstAttribute="leading" secondItem="6yY-M8-OwK" secondAttribute="leading" constant="3" id="McR-J2-BsM"/>
+                <constraint firstItem="IxV-lz-e2L" firstAttribute="top" secondItem="6yY-M8-OwK" secondAttribute="top" constant="3" id="Z41-M6-clW"/>
+                <constraint firstItem="aKF-fv-84v" firstAttribute="leading" secondItem="6yY-M8-OwK" secondAttribute="leading" id="dpe-3u-4vU"/>
+                <constraint firstAttribute="trailing" secondItem="aKF-fv-84v" secondAttribute="trailing" constant="-3" id="ep9-IS-D4f"/>
+                <constraint firstAttribute="trailing" secondItem="IxV-lz-e2L" secondAttribute="trailing" id="ije-2A-mcv"/>
+            </constraints>
+            <size key="customSize" width="50" height="15"/>
+            <connections>
+                <outlet property="timeLabel" destination="IxV-lz-e2L" id="ayG-X7-4b5"/>
+            </connections>
+            <point key="canvasLocation" x="462" y="148.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="XMGFMMine.bundle/img_rec_scale_4" width="404" height="404"/>
+    </resources>
+</document>

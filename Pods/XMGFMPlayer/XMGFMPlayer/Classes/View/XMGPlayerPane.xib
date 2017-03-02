@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMGPlayerPane">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="385"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ef0-Vk-OSv">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oHe-gS-FoZ">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="oHe-gS-FoZ" secondAttribute="height" multiplier="1:1" id="2Ty-Vs-Sa1"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="充电时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75d-fh-FTF">
+                            <frame key="frameInset" minX="54" minY="13" width="60" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XMGFMPlayer.bundle/me_fans_verifylogo" translatesAutoresizingMaskIntoConstraints="NO" id="tYu-ew-bTd">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="Fch-XV-pY1"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="Hje-Qt-0UR"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Lyu-8o-ejl"/>
+                                <constraint firstAttribute="height" constant="20" id="R6V-WP-vDP"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ALf-fj-alJ">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="1FB-Ig-eP0"/>
+                                <constraint firstAttribute="height" constant="20" id="QuO-wO-gtt"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWO-Ez-Qa1">
+                            <connections>
+                                <action selector="clickUserMessage:" destination="iN0-l3-epB" eventType="touchUpInside" id="Nof-et-CIX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ALf-fj-alJ" secondAttribute="trailing" constant="10" id="0Bz-8C-xnJ"/>
+                        <constraint firstItem="oHe-gS-FoZ" firstAttribute="leading" secondItem="Ef0-Vk-OSv" secondAttribute="leading" constant="10" id="Fvy-83-vcs"/>
+                        <constraint firstItem="75d-fh-FTF" firstAttribute="centerY" secondItem="Ef0-Vk-OSv" secondAttribute="centerY" id="G1r-L5-axW"/>
+                        <constraint firstAttribute="trailing" secondItem="zWO-Ez-Qa1" secondAttribute="trailing" id="I3b-gU-WX7"/>
+                        <constraint firstItem="zWO-Ez-Qa1" firstAttribute="top" secondItem="Ef0-Vk-OSv" secondAttribute="top" id="LWS-3y-aka"/>
+                        <constraint firstItem="ALf-fj-alJ" firstAttribute="centerY" secondItem="Ef0-Vk-OSv" secondAttribute="centerY" id="Nq5-mX-Qrb"/>
+                        <constraint firstItem="75d-fh-FTF" firstAttribute="leading" secondItem="oHe-gS-FoZ" secondAttribute="trailing" constant="10" id="PcR-FV-o1o"/>
+                        <constraint firstItem="oHe-gS-FoZ" firstAttribute="top" secondItem="Ef0-Vk-OSv" secondAttribute="top" constant="5" id="RKS-kt-JXg"/>
+                        <constraint firstItem="tYu-ew-bTd" firstAttribute="centerY" secondItem="Ef0-Vk-OSv" secondAttribute="centerY" id="SXR-R2-Xus"/>
+                        <constraint firstItem="tYu-ew-bTd" firstAttribute="leading" secondItem="75d-fh-FTF" secondAttribute="trailing" constant="10" id="Uqn-zl-EHf"/>
+                        <constraint firstItem="zWO-Ez-Qa1" firstAttribute="leading" secondItem="Ef0-Vk-OSv" secondAttribute="leading" id="b4f-aZ-4wh"/>
+                        <constraint firstAttribute="bottom" secondItem="oHe-gS-FoZ" secondAttribute="bottom" constant="5" id="bdc-2E-f65"/>
+                        <constraint firstAttribute="bottom" secondItem="zWO-Ez-Qa1" secondAttribute="bottom" id="dov-Xh-5Lx"/>
+                        <constraint firstAttribute="height" constant="44" id="fSs-Lh-DcU"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGA-of-rpa">
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XMGFMPlayer.bundle/meSoundEdit_topView_browser_default" translatesAutoresizingMaskIntoConstraints="NO" id="XdU-pp-Cvw">
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="6rd-LJ-gei" appends="YES" id="5dL-hb-Xld"/>
+                                <outletCollection property="gestureRecognizers" destination="ieb-Kd-OFn" appends="YES" id="Rdw-O0-goQ"/>
+                                <outletCollection property="gestureRecognizers" destination="bBQ-CT-7Ow" appends="YES" id="fbt-Sf-XMJ"/>
+                            </connections>
+                        </imageView>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EXH-OO-YLt">
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBC-W5-rWy">
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="x 1.0倍"/>
+                                    <connections>
+                                        <action selector="changeRate:" destination="iN0-l3-epB" eventType="touchUpInside" id="tlC-nB-v2y"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZf-yM-jgF">
+                                    <state key="normal" image="XMGFMPlayer.bundle/np_playfast_forward_h"/>
+                                    <connections>
+                                        <action selector="seekFast" destination="iN0-l3-epB" eventType="touchUpInside" id="ybW-Wc-Q3y"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6d-aN-aTz">
+                                    <state key="normal" image="XMGFMPlayer.bundle/np_playfast_back_h"/>
+                                    <connections>
+                                        <action selector="seekBack" destination="iN0-l3-epB" eventType="touchUpInside" id="707-4u-RL4"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.23327047413793053" green="0.20422952586206897" blue="0.19488146551724139" alpha="0.38400376773049633" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="wBC-W5-rWy" firstAttribute="leading" secondItem="k6d-aN-aTz" secondAttribute="trailing" constant="40" id="0t8-EB-3Tc"/>
+                                <constraint firstAttribute="trailing" secondItem="SZf-yM-jgF" secondAttribute="trailing" constant="80" id="3nl-EB-O8J"/>
+                                <constraint firstItem="k6d-aN-aTz" firstAttribute="centerY" secondItem="EXH-OO-YLt" secondAttribute="centerY" id="Bzb-WU-hVB"/>
+                                <constraint firstAttribute="height" constant="40" id="FE9-gf-hEz"/>
+                                <constraint firstItem="SZf-yM-jgF" firstAttribute="centerY" secondItem="EXH-OO-YLt" secondAttribute="centerY" id="U6r-VX-C41"/>
+                                <constraint firstItem="wBC-W5-rWy" firstAttribute="centerX" secondItem="EXH-OO-YLt" secondAttribute="centerX" id="bEJ-4F-fGL"/>
+                                <constraint firstItem="k6d-aN-aTz" firstAttribute="leading" secondItem="EXH-OO-YLt" secondAttribute="leading" constant="80" id="cSa-mS-6eu"/>
+                                <constraint firstItem="wBC-W5-rWy" firstAttribute="centerY" secondItem="EXH-OO-YLt" secondAttribute="centerY" id="jxR-Gc-zeh"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="0t8-EB-3Tc"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.66612810860000005" blue="0.0013801952190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="XdU-pp-Cvw" secondAttribute="trailing" id="G64-yU-gfI"/>
+                        <constraint firstItem="XdU-pp-Cvw" firstAttribute="leading" secondItem="TGA-of-rpa" secondAttribute="leading" id="IfF-Ns-Yyu"/>
+                        <constraint firstAttribute="width" secondItem="TGA-of-rpa" secondAttribute="height" multiplier="10:8" id="TlH-G9-c75"/>
+                        <constraint firstAttribute="bottom" secondItem="EXH-OO-YLt" secondAttribute="bottom" id="VNU-Qb-sPv"/>
+                        <constraint firstAttribute="bottom" secondItem="XdU-pp-Cvw" secondAttribute="bottom" id="Yhz-dj-YEU"/>
+                        <constraint firstItem="EXH-OO-YLt" firstAttribute="leading" secondItem="TGA-of-rpa" secondAttribute="leading" id="kKZ-YJ-BNz"/>
+                        <constraint firstItem="XdU-pp-Cvw" firstAttribute="top" secondItem="TGA-of-rpa" secondAttribute="top" id="qBq-vN-K9e"/>
+                        <constraint firstAttribute="trailing" secondItem="EXH-OO-YLt" secondAttribute="trailing" id="tuc-XY-gTm"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mfx-Uh-fIT">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1M3-AE-SUg" customClass="XMGUpDownBtn">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="azh-IL-IId"/>
+                                <constraint firstAttribute="width" constant="50" id="oQN-y1-X7S"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                            <state key="normal" title="播放列表" image="XMGFMPlayer.bundle/toolbar_playinglist_n_p">
+                                <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted" image="toolbar_playinglist_h_p"/>
+                            <connections>
+                                <action selector="showPlayListView:" destination="iN0-l3-epB" eventType="touchUpInside" id="2IR-q2-3GP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEl-CW-HMz">
+                            <state key="normal" image="XMGFMPlayer.bundle/toolbar_prev_n_p"/>
+                            <state key="highlighted" image="toolbar_prev_n_p"/>
+                            <connections>
+                                <action selector="preAudio" destination="iN0-l3-epB" eventType="touchUpInside" id="eez-Hz-M7Z"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvQ-MY-xfo">
+                            <state key="normal" image="XMGFMPlayer.bundle/toolbar_next_n_p"/>
+                            <state key="highlighted" image="toolbar_next_h_p"/>
+                            <connections>
+                                <action selector="nextAudio" destination="iN0-l3-epB" eventType="touchUpInside" id="1Jl-gd-Hco"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrF-WA-xkW">
+                            <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="15"/>
+                            <state key="normal" backgroundImage="XMGFMPlayer.bundle/np_danmu_bg"/>
+                            <state key="selected" image="np_danmu_logo"/>
+                            <connections>
+                                <action selector="danmu:" destination="iN0-l3-epB" eventType="touchUpInside" id="3vG-cc-BIB"/>
+                            </connections>
+                        </button>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nrd-zN-FDK">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="HE1-Hs-gX7"/>
+                            </constraints>
+                            <color key="minimumTrackTintColor" red="0.90980392160000001" green="0.28627450980000002" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="HE1-Hs-gX7"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="sliderDown" destination="iN0-l3-epB" eventType="touchDown" id="yeQ-IY-aL4"/>
+                                <action selector="sliderUpInside:" destination="iN0-l3-epB" eventType="touchUpOutside" id="EGG-lW-aQc"/>
+                                <action selector="sliderUpInside:" destination="iN0-l3-epB" eventType="touchUpInside" id="e0G-9L-3WG"/>
+                                <action selector="valueChange:" destination="iN0-l3-epB" eventType="valueChanged" id="6Qe-Em-FVu"/>
+                            </connections>
+                        </slider>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSU-9L-Agt">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqB-dn-qVC">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJf-YQ-vME">
+                            <state key="normal" image="XMGFMPlayer.bundle/toolbar_play_n_p"/>
+                            <state key="selected" image="XMGFMPlayer.bundle/toolbar_pause_n_p"/>
+                            <connections>
+                                <action selector="playOrPause:" destination="iN0-l3-epB" eventType="touchUpInside" id="rnp-jc-uFR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.99698277759999998" blue="0.96215569450000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="aJf-YQ-vME" firstAttribute="leading" secondItem="nEl-CW-HMz" secondAttribute="trailing" constant="30" id="18O-YV-Qu9"/>
+                        <constraint firstItem="1M3-AE-SUg" firstAttribute="centerY" secondItem="mfx-Uh-fIT" secondAttribute="centerY" id="6rn-rG-E5U"/>
+                        <constraint firstItem="wSU-9L-Agt" firstAttribute="top" secondItem="mfx-Uh-fIT" secondAttribute="top" constant="-20" id="9Nd-SW-FHM"/>
+                        <constraint firstAttribute="trailing" secondItem="nrd-zN-FDK" secondAttribute="trailing" id="Ehl-Zj-7AV"/>
+                        <constraint firstItem="nrd-zN-FDK" firstAttribute="leading" secondItem="mfx-Uh-fIT" secondAttribute="leading" id="Lw5-GT-QA9"/>
+                        <constraint firstAttribute="trailing" secondItem="uqB-dn-qVC" secondAttribute="trailing" constant="5" id="NNd-g8-cau"/>
+                        <constraint firstItem="aJf-YQ-vME" firstAttribute="leading" secondItem="nrd-zN-FDK" secondAttribute="trailing" id="QpJ-gc-z0R"/>
+                        <constraint firstItem="aJf-YQ-vME" firstAttribute="centerY" secondItem="mfx-Uh-fIT" secondAttribute="centerY" id="Z22-Xj-Akf"/>
+                        <constraint firstAttribute="height" constant="80" id="ZIT-O1-ecj"/>
+                        <constraint firstItem="XrF-WA-xkW" firstAttribute="centerY" secondItem="mfx-Uh-fIT" secondAttribute="centerY" id="bVX-G7-DRC"/>
+                        <constraint firstItem="nrd-zN-FDK" firstAttribute="top" secondItem="mfx-Uh-fIT" secondAttribute="top" constant="-8" id="cPZ-ht-bJ5"/>
+                        <constraint firstItem="vvQ-MY-xfo" firstAttribute="centerY" secondItem="aJf-YQ-vME" secondAttribute="centerY" id="jkM-Z5-scn"/>
+                        <constraint firstItem="wSU-9L-Agt" firstAttribute="leading" secondItem="mfx-Uh-fIT" secondAttribute="leading" constant="5" id="omo-e8-vXJ"/>
+                        <constraint firstItem="nEl-CW-HMz" firstAttribute="centerY" secondItem="aJf-YQ-vME" secondAttribute="centerY" id="oso-bU-dHL"/>
+                        <constraint firstItem="1M3-AE-SUg" firstAttribute="leading" secondItem="mfx-Uh-fIT" secondAttribute="leading" constant="8" id="rYV-6E-Akf"/>
+                        <constraint firstItem="aJf-YQ-vME" firstAttribute="centerX" secondItem="mfx-Uh-fIT" secondAttribute="centerX" id="sAb-t4-2A9"/>
+                        <constraint firstItem="vvQ-MY-xfo" firstAttribute="leading" secondItem="aJf-YQ-vME" secondAttribute="trailing" constant="30" id="who-8C-QMR"/>
+                        <constraint firstAttribute="trailing" secondItem="XrF-WA-xkW" secondAttribute="trailing" constant="10" id="yA7-Pp-rWJ"/>
+                        <constraint firstItem="uqB-dn-qVC" firstAttribute="top" secondItem="mfx-Uh-fIT" secondAttribute="top" constant="-20" id="yog-BZ-vha"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="QpJ-gc-z0R"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mfx-Uh-fIT" secondAttribute="trailing" id="0Ys-Ly-DmI"/>
+                <constraint firstItem="Ef0-Vk-OSv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2iX-w6-M1K"/>
+                <constraint firstAttribute="trailing" secondItem="TGA-of-rpa" secondAttribute="trailing" id="Azx-9Q-iUC"/>
+                <constraint firstItem="mfx-Uh-fIT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HY4-uo-9YQ"/>
+                <constraint firstAttribute="bottom" secondItem="mfx-Uh-fIT" secondAttribute="bottom" id="OlE-ZL-5w0"/>
+                <constraint firstItem="TGA-of-rpa" firstAttribute="top" secondItem="Ef0-Vk-OSv" secondAttribute="bottom" id="PaD-lR-yak"/>
+                <constraint firstItem="TGA-of-rpa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Trf-4t-hFH"/>
+                <constraint firstItem="Ef0-Vk-OSv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="V7p-R9-k5Q"/>
+                <constraint firstItem="mfx-Uh-fIT" firstAttribute="top" secondItem="TGA-of-rpa" secondAttribute="bottom" id="eUK-Fb-nHp"/>
+                <constraint firstAttribute="trailing" secondItem="Ef0-Vk-OSv" secondAttribute="trailing" id="fdt-f7-Hp9"/>
+                <constraint firstItem="mfx-Uh-fIT" firstAttribute="top" secondItem="TGA-of-rpa" secondAttribute="bottom" id="kM3-1E-eV4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                    <real key="value" value="17"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="OlE-ZL-5w0"/>
+                    <exclude reference="kM3-1E-eV4"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="VIcon" destination="tYu-ew-bTd" id="kK7-ga-13m"/>
+                <outlet property="controllerPane" destination="EXH-OO-YLt" id="svd-13-oXh"/>
+                <outlet property="costTimeLabel" destination="wSU-9L-Agt" id="sPD-eS-Smz"/>
+                <outlet property="headIcon" destination="oHe-gS-FoZ" id="y1N-18-MEf"/>
+                <outlet property="middleImageView" destination="XdU-pp-Cvw" id="oXd-GO-eCN"/>
+                <outlet property="playListBtn" destination="1M3-AE-SUg" id="i39-Ut-tAn"/>
+                <outlet property="playOrPauseBtn" destination="aJf-YQ-vME" id="guS-or-RdT"/>
+                <outlet property="progressSlider" destination="nrd-zN-FDK" id="Uxj-J9-ayW"/>
+                <outlet property="titleLabel" destination="75d-fh-FTF" id="zXz-cV-c28"/>
+                <outlet property="totalTimeLabel" destination="uqB-dn-qVC" id="6yr-nE-6wq"/>
+            </connections>
+            <point key="canvasLocation" x="246" y="282.5"/>
+        </view>
+        <swipeGestureRecognizer direction="right" id="6rd-LJ-gei">
+            <connections>
+                <action selector="swip:" destination="iN0-l3-epB" id="gkd-5G-2tg"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="left" id="ieb-Kd-OFn">
+            <connections>
+                <action selector="swip:" destination="iN0-l3-epB" id="ZSG-1E-AbJ"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <tapGestureRecognizer id="bBQ-CT-7Ow">
+            <connections>
+                <action selector="showOrHideControllerPane:" destination="iN0-l3-epB" id="Igt-Ar-LUr"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="XMGFMPlayer.bundle/meSoundEdit_topView_browser_default" width="404" height="404"/>
+        <image name="XMGFMPlayer.bundle/me_fans_verifylogo" width="404" height="404"/>
+        <image name="XMGFMPlayer.bundle/np_danmu_bg" width="404" height="404"/>
+        <image name="XMGFMPlayer.bundle/np_playfast_back_h" width="404" height="404"/>
+        <image name="XMGFMPlayer.bundle/np_playfast_forward_h" width="404" height="404"/>
+        <image name="XMGFMPlayer.bundle/toolbar_next_n_p" width="404" height="404"/>
+        <image name="XMGFMPlayer.bundle/toolbar_pause_n_p" width="404" height="404"/>
+        <image name="XMGFMPlayer.bundle/toolbar_play_n_p" width="404" height="404"/>
+        <image name="XMGFMPlayer.bundle/toolbar_playinglist_n_p" width="404" height="404"/>
+        <image name="XMGFMPlayer.bundle/toolbar_prev_n_p" width="404" height="404"/>
+        <image name="np_danmu_logo" width="12" height="12"/>
+        <image name="toolbar_next_h_p" width="14" height="14"/>
+        <image name="toolbar_playinglist_h_p" width="23" height="23"/>
+        <image name="toolbar_prev_n_p" width="14" height="14"/>
+    </resources>
+</document>

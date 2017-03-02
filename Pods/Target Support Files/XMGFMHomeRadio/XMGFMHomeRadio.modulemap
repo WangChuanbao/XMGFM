@@ -1,0 +1,6 @@
+framework module XMGFMHomeRadio {
+  umbrella header "XMGFMHomeRadio-umbrella.h"
+
+  export *
+  module * { export * }
+}

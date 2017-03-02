@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="KGk-i7-Jjw" customClass="XMGRecommendCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMg-xI-N1Q">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XMGFMHomeRecommend.bundle/liveRadioCellPoint" translatesAutoresizingMaskIntoConstraints="NO" id="RzZ-GZ-pVM">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="Hj7-lH-e5m"/>
+                                    <constraint firstAttribute="width" constant="10" id="zod-4m-JpW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="小编推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sza-Fd-SSa">
+                                <frame key="frameInset" minX="26" minY="9" width="56" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4b-tc-4IA">
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="更多&gt;">
+                                    <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="more:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="meW-l4-HqK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RzZ-GZ-pVM" firstAttribute="leading" secondItem="hMg-xI-N1Q" secondAttribute="leadingMargin" constant="3" id="5TF-sY-KUg"/>
+                            <constraint firstItem="RzZ-GZ-pVM" firstAttribute="centerY" secondItem="hMg-xI-N1Q" secondAttribute="centerY" id="Kl4-JZ-ZT3"/>
+                            <constraint firstItem="sza-Fd-SSa" firstAttribute="leading" secondItem="RzZ-GZ-pVM" secondAttribute="trailing" constant="5" id="Pff-bx-J6n"/>
+                            <constraint firstItem="sza-Fd-SSa" firstAttribute="centerY" secondItem="hMg-xI-N1Q" secondAttribute="centerY" id="XsC-Lz-UMF"/>
+                            <constraint firstAttribute="height" constant="35" id="YYB-Yt-5TC"/>
+                            <constraint firstAttribute="trailing" secondItem="Q4b-tc-4IA" secondAttribute="trailing" constant="10" id="ief-7H-fAt"/>
+                            <constraint firstItem="Q4b-tc-4IA" firstAttribute="centerY" secondItem="hMg-xI-N1Q" secondAttribute="centerY" id="pnY-bt-oei"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1Fv-2J-urx">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PIL-xe-htk">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="OtB-9e-ugo"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="jr0-Sj-iuU"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hMg-xI-N1Q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8Ai-2v-q16"/>
+                    <constraint firstItem="1Fv-2J-urx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BH8-jE-Ym1"/>
+                    <constraint firstItem="hMg-xI-N1Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CEE-Ub-gI3"/>
+                    <constraint firstItem="1Fv-2J-urx" firstAttribute="top" secondItem="hMg-xI-N1Q" secondAttribute="bottom" id="Rcp-Pe-W5E"/>
+                    <constraint firstAttribute="trailing" secondItem="1Fv-2J-urx" secondAttribute="trailing" id="b06-nV-Xbf"/>
+                    <constraint firstAttribute="trailing" secondItem="hMg-xI-N1Q" secondAttribute="trailing" id="pEg-34-qIK"/>
+                    <constraint firstAttribute="bottom" secondItem="1Fv-2J-urx" secondAttribute="bottom" id="yb7-Ma-9pG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="1Fv-2J-urx" id="JPJ-cy-6fX"/>
+                <outlet property="flowLayout" destination="PIL-xe-htk" id="FJR-Tr-f2W"/>
+                <outlet property="titleLabel" destination="sza-Fd-SSa" id="31E-DS-q7k"/>
+            </connections>
+            <point key="canvasLocation" x="267" y="165"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="XMGFMHomeRecommend.bundle/liveRadioCellPoint" width="8" height="10"/>
+    </resources>
+</document>

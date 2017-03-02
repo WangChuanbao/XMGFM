@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="singerCell" rowHeight="70" id="D43-Ji-vny" customClass="XMGFMSingerCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D43-Ji-vny" id="gKw-SK-cHG">
+                <frame key="frameInset" minX="0.0%" minY="0.0%" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F8U-t4-MOh">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="F8U-t4-MOh" secondAttribute="height" multiplier="1:1" id="kth-Xx-Ss1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gC-ah-n8w">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oa-Qt-zD7">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XMGFMAnchor.bundle/album_tracks" translatesAutoresizingMaskIntoConstraints="NO" id="C9D-U0-KZt">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="THD-S4-z2M"/>
+                            <constraint firstAttribute="width" constant="10" id="xTh-T5-5na"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XMGFMAnchor.bundle/live_ic_follow" translatesAutoresizingMaskIntoConstraints="NO" id="HhQ-U2-PB0">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="6oa-Ry-HmJ"/>
+                            <constraint firstAttribute="height" constant="20" id="TIF-eH-Zhk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVe-Ry-dV1">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XMGFMAnchor.bundle/me_fans_verifylogo" translatesAutoresizingMaskIntoConstraints="NO" id="7xz-Tz-1WH">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="18" id="6Gs-ys-Xap"/>
+                            <constraint firstAttribute="height" constant="18" id="RlC-g3-m9u"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7gC-ah-n8w" firstAttribute="top" secondItem="F8U-t4-MOh" secondAttribute="top" constant="-5" id="95a-kJ-1G4"/>
+                    <constraint firstItem="tVe-Ry-dV1" firstAttribute="bottom" secondItem="F8U-t4-MOh" secondAttribute="bottom" id="G4S-Yz-Zj5"/>
+                    <constraint firstItem="7gC-ah-n8w" firstAttribute="leading" secondItem="F8U-t4-MOh" secondAttribute="trailing" constant="10" id="GmG-pI-5Qb"/>
+                    <constraint firstItem="HhQ-U2-PB0" firstAttribute="centerY" secondItem="gKw-SK-cHG" secondAttribute="centerY" id="HFU-OF-RRC"/>
+                    <constraint firstItem="F8U-t4-MOh" firstAttribute="top" secondItem="gKw-SK-cHG" secondAttribute="top" constant="10" id="KoP-gG-8Ue"/>
+                    <constraint firstItem="7xz-Tz-1WH" firstAttribute="centerY" secondItem="7gC-ah-n8w" secondAttribute="centerY" id="MWg-9d-eYg"/>
+                    <constraint firstItem="tVe-Ry-dV1" firstAttribute="leading" secondItem="C9D-U0-KZt" secondAttribute="trailing" constant="5" id="Mwt-LI-Sth"/>
+                    <constraint firstAttribute="bottom" secondItem="F8U-t4-MOh" secondAttribute="bottom" constant="10" id="Mxh-is-oNz"/>
+                    <constraint firstItem="F8U-t4-MOh" firstAttribute="leading" secondItem="gKw-SK-cHG" secondAttribute="leading" constant="10" id="PXo-Wm-gkO"/>
+                    <constraint firstItem="7xz-Tz-1WH" firstAttribute="leading" secondItem="7gC-ah-n8w" secondAttribute="trailing" constant="8" id="QzJ-3A-zh2"/>
+                    <constraint firstItem="C9D-U0-KZt" firstAttribute="bottom" secondItem="F8U-t4-MOh" secondAttribute="bottom" id="Z9h-n6-PED"/>
+                    <constraint firstItem="HhQ-U2-PB0" firstAttribute="leading" secondItem="5oa-Qt-zD7" secondAttribute="trailing" constant="10" id="aOc-2z-qlS"/>
+                    <constraint firstItem="tVe-Ry-dV1" firstAttribute="centerY" secondItem="C9D-U0-KZt" secondAttribute="centerY" id="acM-lN-CRe"/>
+                    <constraint firstAttribute="trailing" secondItem="HhQ-U2-PB0" secondAttribute="trailing" constant="20" id="gVn-s2-8Cz"/>
+                    <constraint firstItem="5oa-Qt-zD7" firstAttribute="leading" secondItem="F8U-t4-MOh" secondAttribute="trailing" constant="10" id="hMk-Nh-xuh"/>
+                    <constraint firstItem="tVe-Ry-dV1" firstAttribute="leading" secondItem="F8U-t4-MOh" secondAttribute="trailing" constant="10" id="isN-f0-kY9"/>
+                    <constraint firstItem="C9D-U0-KZt" firstAttribute="leading" secondItem="F8U-t4-MOh" secondAttribute="trailing" constant="10" id="tDE-77-Ufl"/>
+                    <constraint firstItem="5oa-Qt-zD7" firstAttribute="centerY" secondItem="F8U-t4-MOh" secondAttribute="centerY" id="vb7-DQ-vbM"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="G4S-Yz-Zj5"/>
+                        <exclude reference="isN-f0-kY9"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fansLabel" destination="tVe-Ry-dV1" id="hle-TN-weA"/>
+                <outlet property="middleLabel" destination="5oa-Qt-zD7" id="dy7-q6-FH4"/>
+                <outlet property="singerIcon" destination="F8U-t4-MOh" id="myJ-Xf-3G4"/>
+                <outlet property="titleLabel" destination="7gC-ah-n8w" id="Cn0-ip-aAk"/>
+                <outlet property="vLogo" destination="7xz-Tz-1WH" id="TBi-K1-0wB"/>
+            </connections>
+            <point key="canvasLocation" x="171" y="249"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="XMGFMAnchor.bundle/album_tracks" width="8" height="10"/>
+        <image name="XMGFMAnchor.bundle/live_ic_follow" width="8" height="10"/>
+        <image name="XMGFMAnchor.bundle/me_fans_verifylogo" width="8" height="10"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module XMGSubScript {
+  umbrella header "XMGSubScript-umbrella.h"
+
+  export *
+  module * { export * }
+}

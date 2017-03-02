@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMGHistoryHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1g-iC-cjE">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="b6S-4e-66h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="选择删除">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="headerButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ogc-2g-8ma"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00v-Sc-dpb">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="6x2-2r-KVv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="一键清空">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="headerButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Tva-3n-vkq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="00v-Sc-dpb" firstAttribute="height" secondItem="N1g-iC-cjE" secondAttribute="height" id="4Dv-UA-0zb"/>
+                <constraint firstItem="N1g-iC-cjE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7Zc-Bu-F35"/>
+                <constraint firstAttribute="trailing" secondItem="00v-Sc-dpb" secondAttribute="trailing" id="NjV-Ik-yPL"/>
+                <constraint firstItem="N1g-iC-cjE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="P2I-Ho-jlw"/>
+                <constraint firstItem="00v-Sc-dpb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PGJ-eQ-y3F"/>
+                <constraint firstItem="00v-Sc-dpb" firstAttribute="leading" secondItem="N1g-iC-cjE" secondAttribute="trailing" id="TIl-g5-l3s"/>
+                <constraint firstItem="00v-Sc-dpb" firstAttribute="width" secondItem="N1g-iC-cjE" secondAttribute="width" id="UhH-Iz-DIX"/>
+                <constraint firstAttribute="bottom" secondItem="N1g-iC-cjE" secondAttribute="bottom" id="fZc-Ii-H1O"/>
+                <constraint firstAttribute="bottom" secondItem="00v-Sc-dpb" secondAttribute="bottom" id="hPL-0v-0Jx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="201.5" y="39"/>
+        </view>
+    </objects>
+</document>

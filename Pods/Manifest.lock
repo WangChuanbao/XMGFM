@@ -1,0 +1,155 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - FreeStreamer (3.5.7):
+    - Reachability (~> 3.0)
+  - GCDWebServer/Core (3.3.2)
+  - GCDWebServer/WebUploader (3.3.2):
+    - GCDWebServer/WebUploader/Core (= 3.3.2)
+  - GCDWebServer/WebUploader/Core (3.3.2):
+    - GCDWebServer/Core
+  - MJExtension (3.0.10)
+  - Reachability (3.2)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - XMGAdPicView (0.1.0)
+  - XMGFMAnchor (0.2.0):
+    - MJExtension
+    - XMGFMBase
+  - XMGFMBase (1.0.5):
+    - XMGFMBase/Base (= 1.0.5)
+    - XMGFMBase/Category (= 1.0.5)
+    - XMGFMBase/Network (= 1.0.5)
+    - XMGFMBase/Tool (= 1.0.5)
+  - XMGFMBase/Base (1.0.5)
+  - XMGFMBase/Category (1.0.5)
+  - XMGFMBase/Network (1.0.5):
+    - AFNetworking (~> 3.1.0)
+    - SDWebImage
+    - XMGFMBase/Category
+  - XMGFMBase/Tool (1.0.5)
+  - XMGFMCommonMV (0.2.0):
+    - XMGAdPicView
+    - XMGFMBase
+    - XMGFMMenueView
+  - XMGFMDanMu (0.1.0)
+  - XMGFMDownLoad (0.3.0)
+  - XMGFMDownLoadListen (0.9.0):
+    - FMDB
+    - MJExtension
+    - XMGFMBase
+    - XMGFMDownLoad
+    - XMGFMPlayerService
+    - XMGFMSegment
+  - XMGFMHome (0.5.0):
+    - MJExtension
+    - XMGFMAnchor
+    - XMGFMHomeBillBoard
+    - XMGFMHomeCategory
+    - XMGFMHomeRadio
+    - XMGFMHomeRecommend
+    - XMGHomeFrame
+  - XMGFMHomeBillBoard (0.3.0):
+    - MJExtension
+    - XMGAdPicView
+    - XMGFMBase
+    - XMGFMCommonMV
+    - XMGFMMenueView
+  - XMGFMHomeCategory (0.2.0):
+    - MJExtension
+    - XMGAdPicView
+    - XMGFMBase
+    - XMGFMCommonMV
+    - XMGFMMenueView
+  - XMGFMHomeRadio (0.3.0):
+    - MJExtension
+    - XMGAdPicView
+    - XMGFMBase
+    - XMGFMMenueView
+  - XMGFMHomeRecommend (0.9.0):
+    - MJExtension
+    - XMGAdPicView
+    - XMGFMBase
+    - XMGFMCommonMV
+    - XMGFMMenueView
+  - XMGFMMain (0.8.0):
+    - XMGFMBase
+  - XMGFMMenueView (0.1.0)
+  - XMGFMMine (0.3.0):
+    - GCDWebServer/WebUploader
+    - MJExtension
+    - XMGFMBase
+  - XMGFMPlayer (1.0.0):
+    - FreeStreamer
+    - MJExtension
+    - XMGFMBase
+    - XMGFMDanMu
+    - XMGFMPlayerService
+  - XMGFMPlayerService (0.8.0):
+    - FreeStreamer
+  - XMGFMSegment (0.1.0):
+    - XMGFMBase
+  - XMGHomeFrame (0.4.0):
+    - XMGFMSegment
+  - XMGSubScript (0.4.0):
+    - MJExtension
+    - XMGFMBase
+    - XMGFMSegment
+
+DEPENDENCIES:
+  - XMGFMDownLoadListen
+  - XMGFMHome
+  - XMGFMMain
+  - XMGFMMine
+  - XMGFMPlayer
+  - XMGSubScript
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  FreeStreamer: c11b83e4e4010c00d1e1549a37d6719e98252c45
+  GCDWebServer: 2a375ec42839a41d7187d04e5b688d32fa5c4cd5
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  XMGAdPicView: 53b3261faa013a62562e06b3ba3d83734c653fc4
+  XMGFMAnchor: e36b8ae87dff3e3742615fdc7230b9c5b0107654
+  XMGFMBase: a95d3e9192570946496754ec17d92c4ad35ba5ee
+  XMGFMCommonMV: 864162148ca26eed01fae81503c53e6de06e76c3
+  XMGFMDanMu: b7687c1cc0899f7dbf09ada1bb6dd4bfc48c0bee
+  XMGFMDownLoad: c97c0cccf0e68a3b8ae7fdf215c81a7e05baae06
+  XMGFMDownLoadListen: 37f0d1ae3b5db4617364300f7240fec3b1cad5f7
+  XMGFMHome: 58dd0bc58cbf8666bb303dfc1ac7bc7bef3064b0
+  XMGFMHomeBillBoard: 3f4b022739d31b7f6d0c3452f3502df90c0b5046
+  XMGFMHomeCategory: bbd1bd2d39fdda348acde29f57d691e8d5ee83b9
+  XMGFMHomeRadio: e438a9cace2e5312368d7cbf50269e8b6cdb7d47
+  XMGFMHomeRecommend: 06c0007e5af1d381025aec8e2d812c6e4a1ec4fa
+  XMGFMMain: 67de2042f9f2a774dfadad5cb391365dbe94295f
+  XMGFMMenueView: 4763d63fc5504947d313e75bcca5b6334ede2807
+  XMGFMMine: e157eeef46d01821d66b27607b84ad74f830cdfa
+  XMGFMPlayer: a760190af723b01a7e620bfbb38fb7987eab7675
+  XMGFMPlayerService: c949caef478cb53cf7bc29ea68f18864ce25c742
+  XMGFMSegment: a8f9e05ff531c9b68087cbea92b3e7bc03803de7
+  XMGHomeFrame: bae7340a90a9a9af073d08c41dd8b1dd4bef9d2c
+  XMGSubScript: c5c01432f80cb8860548fd777169d357f7f83667
+
+PODFILE CHECKSUM: c6b37123aef813214d93a92bb80db0bab6af2457
+
+COCOAPODS: 1.1.1

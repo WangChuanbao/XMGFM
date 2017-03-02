@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="downloadCell" rowHeight="54" id="KGk-i7-Jjw" customClass="XMGDownLoadCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.0M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6Y-ew-gZ8">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8w-xo-N7G">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="cKj-Bs-eEX"/>
+                            <constraint firstAttribute="width" constant="20" id="wJJ-b4-YFs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="down">
+                            <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="yat-0a-jcl">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="Ivs-wj-FxO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsl-PX-oWF">
+                        <color key="backgroundColor" red="0.90250736259999997" green="0.90250736259999997" blue="0.90250736259999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="deU-U6-wk6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="e6Y-ew-gZ8" secondAttribute="trailing" constant="10" id="0qJ-o9-fKr"/>
+                    <constraint firstItem="yat-0a-jcl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="7EW-IW-66t"/>
+                    <constraint firstAttribute="bottom" secondItem="lsl-PX-oWF" secondAttribute="bottom" id="Frj-Kp-0Be"/>
+                    <constraint firstItem="e6Y-ew-gZ8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Q0I-Z4-MDY"/>
+                    <constraint firstItem="lsl-PX-oWF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Tk3-YT-lY4"/>
+                    <constraint firstItem="yat-0a-jcl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hgO-DC-tsk"/>
+                    <constraint firstAttribute="trailing" secondItem="lsl-PX-oWF" secondAttribute="trailing" id="kQB-Zc-xnw"/>
+                    <constraint firstItem="M8w-xo-N7G" firstAttribute="leading" secondItem="yat-0a-jcl" secondAttribute="trailing" constant="10" id="qw7-gr-FRh"/>
+                    <constraint firstItem="M8w-xo-N7G" firstAttribute="top" secondItem="e6Y-ew-gZ8" secondAttribute="bottom" constant="10" id="rVd-2I-d7h"/>
+                    <constraint firstAttribute="trailing" secondItem="M8w-xo-N7G" secondAttribute="trailing" constant="10" id="x1t-p9-oBT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="281" y="219"/>
+        </tableViewCell>
+    </objects>
+</document>

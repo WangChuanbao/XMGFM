@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyCell" rowHeight="100" id="WzN-sA-Fud" customClass="XMGHistoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WzN-sA-Fud" id="MLT-V2-A5s">
+                <frame key="frameInset" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XMGSubScript.bundle/find_albumcell_cover_bg" translatesAutoresizingMaskIntoConstraints="NO" id="l4J-T3-ouR">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="Gby-C0-VtO"/>
+                            <constraint firstAttribute="width" constant="70" id="d55-pc-qFj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8I-5e-v6N">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="cfX-Tn-B0g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6D-6j-rGT">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="Ovw-xO-Ior"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMi-Zk-nwE" userLabel="line">
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="bQZ-3d-9tK"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CS4-PN-6DD">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13.5" id="XdZ-lD-kmh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j7b-in-my3">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="A8r-Y0-FJ1"/>
+                            <constraint firstAttribute="width" constant="20" id="dg8-T1-KgK"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LMi-Zk-nwE" firstAttribute="top" secondItem="CS4-PN-6DD" secondAttribute="bottom" constant="10" id="1hE-7X-9Ca"/>
+                    <constraint firstItem="h6D-6j-rGT" firstAttribute="top" secondItem="V8I-5e-v6N" secondAttribute="bottom" constant="10" id="1rZ-6z-POa"/>
+                    <constraint firstItem="CS4-PN-6DD" firstAttribute="top" secondItem="h6D-6j-rGT" secondAttribute="bottom" constant="10" id="20l-fu-1h8"/>
+                    <constraint firstItem="LMi-Zk-nwE" firstAttribute="leading" secondItem="CS4-PN-6DD" secondAttribute="leading" id="2b3-8k-TVd"/>
+                    <constraint firstItem="h6D-6j-rGT" firstAttribute="leading" secondItem="V8I-5e-v6N" secondAttribute="leading" id="5JV-XL-7og"/>
+                    <constraint firstAttribute="trailing" secondItem="h6D-6j-rGT" secondAttribute="trailing" constant="10" id="8za-XB-yRJ"/>
+                    <constraint firstItem="l4J-T3-ouR" firstAttribute="top" secondItem="MLT-V2-A5s" secondAttribute="top" constant="10" id="GfK-uz-uaI"/>
+                    <constraint firstItem="V8I-5e-v6N" firstAttribute="top" secondItem="l4J-T3-ouR" secondAttribute="top" id="M4k-3Y-Ev5"/>
+                    <constraint firstAttribute="trailing" secondItem="V8I-5e-v6N" secondAttribute="trailing" constant="10" id="Uue-l3-wjB"/>
+                    <constraint firstItem="j7b-in-my3" firstAttribute="top" secondItem="MLT-V2-A5s" secondAttribute="top" id="VjY-IA-daT"/>
+                    <constraint firstAttribute="trailing" secondItem="LMi-Zk-nwE" secondAttribute="trailing" id="fgh-qR-voC"/>
+                    <constraint firstItem="LMi-Zk-nwE" firstAttribute="top" secondItem="CS4-PN-6DD" secondAttribute="bottom" constant="10" id="hiJ-eA-vBt"/>
+                    <constraint firstItem="CS4-PN-6DD" firstAttribute="leading" secondItem="h6D-6j-rGT" secondAttribute="leading" id="kK2-Zj-t01"/>
+                    <constraint firstItem="l4J-T3-ouR" firstAttribute="leading" secondItem="MLT-V2-A5s" secondAttribute="leading" constant="10" id="mmG-ak-Ssi"/>
+                    <constraint firstItem="j7b-in-my3" firstAttribute="leading" secondItem="MLT-V2-A5s" secondAttribute="leading" id="n0z-vZ-Ccj"/>
+                    <constraint firstItem="V8I-5e-v6N" firstAttribute="leading" secondItem="l4J-T3-ouR" secondAttribute="trailing" constant="10" id="n2S-lD-4rE"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="1hE-7X-9Ca"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LMi-Zk-nwE" secondAttribute="bottom" constant="10.5" id="375-dT-wlL"/>
+                <constraint firstAttribute="bottom" secondItem="LMi-Zk-nwE" secondAttribute="bottom" constant="11.5" id="5uw-GP-gfZ"/>
+                <constraint firstAttribute="bottom" secondItem="LMi-Zk-nwE" secondAttribute="bottom" constant="12.5" id="HhA-0b-KvV"/>
+                <constraint firstAttribute="bottom" secondItem="LMi-Zk-nwE" secondAttribute="bottom" constant="17" id="Oki-6R-0QA"/>
+                <constraint firstAttribute="bottom" secondItem="LMi-Zk-nwE" secondAttribute="bottom" constant="9.5" id="eLy-7q-kYm"/>
+                <constraint firstAttribute="bottom" secondItem="LMi-Zk-nwE" secondAttribute="bottom" constant="10" id="jnx-67-DuO"/>
+                <constraint firstAttribute="bottom" secondItem="LMi-Zk-nwE" secondAttribute="bottom" constant="10.5" id="oNE-Oc-KQl"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="375-dT-wlL"/>
+                    <exclude reference="5uw-GP-gfZ"/>
+                    <exclude reference="HhA-0b-KvV"/>
+                    <exclude reference="Oki-6R-0QA"/>
+                    <exclude reference="eLy-7q-kYm"/>
+                    <exclude reference="jnx-67-DuO"/>
+                    <exclude reference="oNE-Oc-KQl"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="6" y="170"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="XMGSubScript.bundle/find_albumcell_cover_bg" width="90" height="90"/>
+    </resources>
+</document>

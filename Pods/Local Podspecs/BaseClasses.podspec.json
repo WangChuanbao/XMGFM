@@ -1,0 +1,26 @@
+{
+  "name": "BaseClasses",
+  "version": "0.0.1",
+  "summary": "公共的基础组件, 比如系统分类, 工具类等",
+  "description": "公共的基础组件, 比如系统分类, 工具类等",
+  "homepage": "http://EXAMPLE/BaseClasses",
+  "license": "MIT",
+  "authors": {
+    "shunzi": "shunzi@qq.com"
+  },
+  "source": {
+    "git": "",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "BaseClasses",
+    "BaseClasses/**/*.{h,m}"
+  ],
+  "exclude_files": "BaseClasses/Exclude",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}

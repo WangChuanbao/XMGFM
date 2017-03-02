@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMGNoDownLoadView">
+            <rect key="frame" x="0.0" y="0.0" width="242" height="239"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XMGFMDownLoadListen.bundle/noData_download" translatesAutoresizingMaskIntoConstraints="NO" id="orB-Bh-dbV">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="NJR-Of-rIT"/>
+                        <constraint firstAttribute="width" constant="150" id="s1h-Ko-DKO"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qf7-cM-0Rt">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="3nw-WW-8XK"/>
+                        <constraint firstAttribute="height" constant="30" id="jgO-vI-MsV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="去看看">
+                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goView" destination="iN0-l3-epB" eventType="touchUpInside" id="0m0-0i-2J3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="orB-Bh-dbV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="F7e-Kf-wPK"/>
+                <constraint firstItem="orB-Bh-dbV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="K1T-FG-DaF"/>
+                <constraint firstItem="Qf7-cM-0Rt" firstAttribute="top" secondItem="orB-Bh-dbV" secondAttribute="bottom" constant="16" id="RIa-gA-IAU"/>
+                <constraint firstItem="Qf7-cM-0Rt" firstAttribute="centerX" secondItem="orB-Bh-dbV" secondAttribute="centerX" id="v1p-bL-dBb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="noDataImageView" destination="orB-Bh-dbV" id="A7d-eA-KEA"/>
+            </connections>
+            <point key="canvasLocation" x="297" y="74.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="XMGFMDownLoadListen.bundle/noData_download" width="90" height="90"/>
+    </resources>
+</document>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMGCategoriesView">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxr-Qg-Ndk" customClass="XMGCategoriesBtn">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="OWH-Zb-BfV"/>
+                    </constraints>
+                    <state key="normal" title="本地台" image="XMGFMHomeRadio.bundle/icon_radio_local">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="localRadio:" destination="iN0-l3-epB" eventType="touchUpInside" id="Xu3-fL-uJb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVX-ub-sVP" customClass="XMGCategoriesBtn">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="yRp-BU-IEy"/>
+                    </constraints>
+                    <state key="normal" title="国家台" image="XMGFMHomeRadio.bundle/icon_radio_country">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="nationalRadio:" destination="iN0-l3-epB" eventType="touchUpInside" id="jvt-1J-4aX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiK-DE-q6Z" customClass="XMGCategoriesBtn">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="5QG-QM-5wX"/>
+                    </constraints>
+                    <state key="normal" title="省市台" image="XMGFMHomeRadio.bundle/icon_radio_province">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="provinceRadio:" destination="iN0-l3-epB" eventType="touchUpInside" id="3GB-81-Vff"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJX-YR-vE2" customClass="XMGCategoriesBtn">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="BiQ-rw-37m"/>
+                    </constraints>
+                    <state key="normal" title="网络台" image="XMGFMHomeRadio.bundle/icon_radio_internet">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="networkRadio:" destination="iN0-l3-epB" eventType="touchUpInside" id="2Ue-fr-oAt"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="B5y-pF-ciS">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bYI-GU-tsx">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rJX-YR-vE2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2bd-0Y-kOg"/>
+                <constraint firstItem="oiK-DE-q6Z" firstAttribute="height" secondItem="jxr-Qg-Ndk" secondAttribute="height" id="3et-Ny-1fw"/>
+                <constraint firstItem="AVX-ub-sVP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9oF-Wp-wx7"/>
+                <constraint firstItem="AVX-ub-sVP" firstAttribute="width" secondItem="jxr-Qg-Ndk" secondAttribute="width" id="BUp-rr-xvA"/>
+                <constraint firstItem="B5y-pF-ciS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Coc-ic-HXz"/>
+                <constraint firstItem="oiK-DE-q6Z" firstAttribute="leading" secondItem="AVX-ub-sVP" secondAttribute="trailing" id="Czq-ab-tAm"/>
+                <constraint firstItem="rJX-YR-vE2" firstAttribute="width" secondItem="jxr-Qg-Ndk" secondAttribute="width" id="FbY-SQ-npt"/>
+                <constraint firstAttribute="trailing" secondItem="B5y-pF-ciS" secondAttribute="trailing" constant="8" id="HzP-wp-Rye"/>
+                <constraint firstItem="rJX-YR-vE2" firstAttribute="height" secondItem="jxr-Qg-Ndk" secondAttribute="height" id="VQG-Ml-z27"/>
+                <constraint firstItem="oiK-DE-q6Z" firstAttribute="width" secondItem="jxr-Qg-Ndk" secondAttribute="width" id="amr-JA-LNt"/>
+                <constraint firstItem="rJX-YR-vE2" firstAttribute="leading" secondItem="oiK-DE-q6Z" secondAttribute="trailing" id="cFb-Fh-870"/>
+                <constraint firstItem="jxr-Qg-Ndk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dcV-Bz-sBU"/>
+                <constraint firstItem="B5y-pF-ciS" firstAttribute="top" secondItem="rJX-YR-vE2" secondAttribute="bottom" constant="8" id="eeb-F8-b8S"/>
+                <constraint firstAttribute="bottom" secondItem="B5y-pF-ciS" secondAttribute="bottom" constant="8" id="fSJ-w9-MvE"/>
+                <constraint firstItem="jxr-Qg-Ndk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mAS-Kf-7jS"/>
+                <constraint firstAttribute="trailing" secondItem="rJX-YR-vE2" secondAttribute="trailing" id="rCR-ay-dFv"/>
+                <constraint firstItem="AVX-ub-sVP" firstAttribute="leading" secondItem="jxr-Qg-Ndk" secondAttribute="trailing" id="upi-6z-E1B"/>
+                <constraint firstItem="AVX-ub-sVP" firstAttribute="height" secondItem="jxr-Qg-Ndk" secondAttribute="height" id="x2N-fx-ysi"/>
+                <constraint firstItem="oiK-DE-q6Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zwF-im-YEd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="B5y-pF-ciS" id="lbk-0e-7vh"/>
+            </connections>
+            <point key="canvasLocation" x="91.5" y="10"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="XMGFMHomeRadio.bundle/icon_radio_country" width="40" height="40"/>
+        <image name="XMGFMHomeRadio.bundle/icon_radio_internet" width="40" height="40"/>
+        <image name="XMGFMHomeRadio.bundle/icon_radio_local" width="40" height="40"/>
+        <image name="XMGFMHomeRadio.bundle/icon_radio_province" width="40" height="40"/>
+    </resources>
+</document>

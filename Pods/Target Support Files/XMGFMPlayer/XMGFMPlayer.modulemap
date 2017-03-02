@@ -1,0 +1,6 @@
+framework module XMGFMPlayer {
+  umbrella header "XMGFMPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

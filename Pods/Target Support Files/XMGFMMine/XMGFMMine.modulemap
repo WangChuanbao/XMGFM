@@ -1,0 +1,6 @@
+framework module XMGFMMine {
+  umbrella header "XMGFMMine-umbrella.h"
+
+  export *
+  module * { export * }
+}

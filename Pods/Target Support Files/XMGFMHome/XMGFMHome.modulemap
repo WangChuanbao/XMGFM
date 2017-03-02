@@ -1,0 +1,6 @@
+framework module XMGFMHome {
+  umbrella header "XMGFMHome-umbrella.h"
+
+  export *
+  module * { export * }
+}

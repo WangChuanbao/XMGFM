@@ -1,0 +1,6 @@
+framework module XMGFMHomeRecommend {
+  umbrella header "XMGFMHomeRecommend-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module XMGFMSegment {
+  umbrella header "XMGFMSegment-umbrella.h"
+
+  export *
+  module * { export * }
+}

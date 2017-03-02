@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="XMGDownLoadVoiceCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1Q-Qd-Q9m">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Jww-b9-seW"/>
+                            <constraint firstAttribute="width" constant="40" id="W4p-8z-eFh"/>
+                        </constraints>
+                        <state key="normal" image="XMGFMDownLoadListen.bundle/cell_sound_play_n"/>
+                        <state key="selected" image="XMGFMDownLoadListen.bundle/cell_sound_pause_n"/>
+                        <connections>
+                            <action selector="playOrPause:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="M6R-An-fbJ"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsC-Hb-kxW">
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by 黄埔系傲娇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47J-ea-ecg">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.7M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5F-lK-bOe">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEg-9P-nBW">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="3Qo-i5-DmL"/>
+                            <constraint firstAttribute="height" constant="30" id="EG0-nB-ymb"/>
+                        </constraints>
+                        <state key="normal" image="XMGFMDownLoadListen.bundle/deleteCell_h"/>
+                        <connections>
+                            <action selector="deleteFile" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3rP-ga-oYg"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kO-1X-H3s">
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <state key="normal" title="87.7万" image="XMGFMDownLoadListen.bundle/find_albumcell_play">
+                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUR-vi-kOJ">
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <state key="normal" title="87.7万" image="XMGFMDownLoadListen.bundle/sound_comments">
+                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPt-DX-hfc">
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <state key="normal" title="22" image="XMGFMDownLoadListen.bundle/sound_duration">
+                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已播82%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4a-WY-KCw">
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="1" green="0.66945109420000004" blue="0.38331050500000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zr-QJ-dmM" userLabel="progressBackView">
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQz-mo-rLN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="aY4-kr-9A2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title=" 开始下载" image="XMGFMDownLoadListen.bundle/sound_downloading">
+                                    <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" title=" 暂停下载" image="XMGFMDownLoadListen.bundle/paused"/>
+                                <connections>
+                                    <action selector="downLoadOrPause:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="giI-Su-eH2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.2M/8.6M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGZ-FT-oyt">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="2rH-fU-8Fh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" progressImage="XMGFMDownLoadListen.bundle/sound_progress_h" trackImage="XMGFMDownLoadListen.bundle/sound_progress_n" translatesAutoresizingMaskIntoConstraints="NO" id="fjC-5K-gL3"/>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69632722701149419" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.51845079787234039" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="eGZ-FT-oyt" secondAttribute="bottom" id="4T5-Rq-WHe"/>
+                            <constraint firstItem="fjC-5K-gL3" firstAttribute="leading" secondItem="YQz-mo-rLN" secondAttribute="trailing" constant="10" id="9Xl-1b-uVG"/>
+                            <constraint firstItem="eGZ-FT-oyt" firstAttribute="top" secondItem="9zr-QJ-dmM" secondAttribute="top" id="LQE-C8-JMF"/>
+                            <constraint firstItem="YQz-mo-rLN" firstAttribute="top" secondItem="9zr-QJ-dmM" secondAttribute="top" id="UQk-2x-igH"/>
+                            <constraint firstAttribute="height" constant="20" id="VIA-ie-laU"/>
+                            <constraint firstItem="eGZ-FT-oyt" firstAttribute="leading" secondItem="fjC-5K-gL3" secondAttribute="trailing" constant="10" id="bi5-Bg-sdW"/>
+                            <constraint firstAttribute="trailing" secondItem="eGZ-FT-oyt" secondAttribute="trailing" id="iwi-dW-rMP"/>
+                            <constraint firstItem="YQz-mo-rLN" firstAttribute="leading" secondItem="9zr-QJ-dmM" secondAttribute="leading" id="lrG-MX-hdd"/>
+                            <constraint firstAttribute="bottom" secondItem="YQz-mo-rLN" secondAttribute="bottom" id="psc-cE-pBX"/>
+                            <constraint firstItem="fjC-5K-gL3" firstAttribute="centerY" secondItem="9zr-QJ-dmM" secondAttribute="centerY" id="ur0-2s-b6X"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9zr-QJ-dmM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7CA-Z1-aKl"/>
+                    <constraint firstItem="7kO-1X-H3s" firstAttribute="leading" secondItem="47J-ea-ecg" secondAttribute="leading" id="AUh-eR-4Tp"/>
+                    <constraint firstAttribute="bottom" secondItem="9zr-QJ-dmM" secondAttribute="bottom" id="LIE-IL-ybj"/>
+                    <constraint firstItem="t1Q-Qd-Q9m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="NrG-32-68q"/>
+                    <constraint firstItem="xPt-DX-hfc" firstAttribute="top" secondItem="jUR-vi-kOJ" secondAttribute="top" id="QPw-zs-N1M"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="y5F-lK-bOe" secondAttribute="trailing" constant="10" id="T4i-E8-oSu"/>
+                    <constraint firstItem="m4a-WY-KCw" firstAttribute="top" secondItem="xPt-DX-hfc" secondAttribute="top" id="UnR-Dn-VgL"/>
+                    <constraint firstItem="y5F-lK-bOe" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="20" id="VNL-t7-8Pz"/>
+                    <constraint firstItem="y5F-lK-bOe" firstAttribute="top" secondItem="jsC-Hb-kxW" secondAttribute="top" id="WUy-UY-tER"/>
+                    <constraint firstItem="7kO-1X-H3s" firstAttribute="top" secondItem="47J-ea-ecg" secondAttribute="bottom" constant="4.5" id="YeU-tL-PQG"/>
+                    <constraint firstItem="t1Q-Qd-Q9m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="bwF-vP-8dB"/>
+                    <constraint firstItem="jsC-Hb-kxW" firstAttribute="top" secondItem="t1Q-Qd-Q9m" secondAttribute="top" id="dzb-lk-sS3"/>
+                    <constraint firstItem="UEg-9P-nBW" firstAttribute="top" secondItem="y5F-lK-bOe" secondAttribute="bottom" constant="7.5" id="hJe-Tl-mIv"/>
+                    <constraint firstItem="y5F-lK-bOe" firstAttribute="centerY" secondItem="jsC-Hb-kxW" secondAttribute="centerY" id="hbY-pU-Tbr"/>
+                    <constraint firstItem="jUR-vi-kOJ" firstAttribute="top" secondItem="7kO-1X-H3s" secondAttribute="top" id="iFg-ny-GGv"/>
+                    <constraint firstItem="m4a-WY-KCw" firstAttribute="leading" secondItem="xPt-DX-hfc" secondAttribute="trailing" constant="3" id="l4d-VO-8js"/>
+                    <constraint firstItem="47J-ea-ecg" firstAttribute="top" secondItem="jsC-Hb-kxW" secondAttribute="bottom" constant="-1" id="sPG-5E-GuR"/>
+                    <constraint firstItem="UEg-9P-nBW" firstAttribute="trailing" secondItem="y5F-lK-bOe" secondAttribute="trailing" id="tdU-ew-OLX"/>
+                    <constraint firstAttribute="trailing" secondItem="9zr-QJ-dmM" secondAttribute="trailing" id="v0I-oy-Tis"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jsC-Hb-kxW" secondAttribute="trailing" constant="60" id="vCu-mF-HB5"/>
+                    <constraint firstItem="jUR-vi-kOJ" firstAttribute="leading" secondItem="7kO-1X-H3s" secondAttribute="trailing" constant="3" id="vlL-H5-xXH"/>
+                    <constraint firstItem="xPt-DX-hfc" firstAttribute="leading" secondItem="jUR-vi-kOJ" secondAttribute="trailing" constant="3" id="xeo-yv-8hu"/>
+                    <constraint firstItem="jsC-Hb-kxW" firstAttribute="leading" secondItem="t1Q-Qd-Q9m" secondAttribute="trailing" constant="13" id="xph-w8-QJ4"/>
+                    <constraint firstItem="47J-ea-ecg" firstAttribute="leading" secondItem="jsC-Hb-kxW" secondAttribute="leading" id="ymE-dz-OrD"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="VNL-t7-8Pz"/>
+                        <exclude reference="hbY-pU-Tbr"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="downLoadOrPauseBtn" destination="YQz-mo-rLN" id="kem-CU-qMS"/>
+                <outlet property="downLoadProgressV" destination="fjC-5K-gL3" id="pkQ-Xh-sZ5"/>
+                <outlet property="playOrPauseBtn" destination="t1Q-Qd-Q9m" id="Nzg-aU-jFx"/>
+                <outlet property="progressBackView" destination="9zr-QJ-dmM" id="yQO-km-XJr"/>
+                <outlet property="progressLabel" destination="eGZ-FT-oyt" id="jwl-Ez-u1v"/>
+                <outlet property="voiceAuthorLabel" destination="47J-ea-ecg" id="A4j-Sn-tIe"/>
+                <outlet property="voiceCommentBtn" destination="jUR-vi-kOJ" id="RRY-Q7-oaO"/>
+                <outlet property="voiceDurationBtn" destination="xPt-DX-hfc" id="EOW-wd-hi1"/>
+                <outlet property="voiceFileSizeLabel" destination="y5F-lK-bOe" id="mRR-jT-RPV"/>
+                <outlet property="voicePlayCountBtn" destination="7kO-1X-H3s" id="xwu-oI-leM"/>
+                <outlet property="voicePlayProgressLabel" destination="m4a-WY-KCw" id="pyy-lz-Fiu"/>
+                <outlet property="voiceTitleLabel" destination="jsC-Hb-kxW" id="B1c-HF-rAX"/>
+            </connections>
+            <point key="canvasLocation" x="343" y="201"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="XMGFMDownLoadListen.bundle/cell_sound_pause_n" width="38" height="38"/>
+        <image name="XMGFMDownLoadListen.bundle/cell_sound_play_n" width="38" height="38"/>
+        <image name="XMGFMDownLoadListen.bundle/deleteCell_h" width="90" height="90"/>
+        <image name="XMGFMDownLoadListen.bundle/find_albumcell_play" width="38" height="38"/>
+        <image name="XMGFMDownLoadListen.bundle/paused" width="38" height="38"/>
+        <image name="XMGFMDownLoadListen.bundle/sound_comments" width="38" height="38"/>
+        <image name="XMGFMDownLoadListen.bundle/sound_downloading" width="90" height="90"/>
+        <image name="XMGFMDownLoadListen.bundle/sound_duration" width="38" height="38"/>
+        <image name="XMGFMDownLoadListen.bundle/sound_progress_h" width="38" height="38"/>
+        <image name="XMGFMDownLoadListen.bundle/sound_progress_n" width="38" height="38"/>
+    </resources>
+</document>

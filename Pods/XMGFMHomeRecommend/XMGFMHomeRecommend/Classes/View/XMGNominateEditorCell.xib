@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="XMGNominateEditorCell" rowHeight="75" id="KGk-i7-Jjw" customClass="XMGNominateEditorCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ohC-wm-bJq">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68" id="V5n-PM-zA3"/>
+                            <constraint firstAttribute="width" constant="68" id="zXy-8g-tV3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0G-IV-lMc">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kl3-mn-PYa">
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06k-3k-X41">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="1000.0万" image="XMGFMHomeRecommend.bundle/album_play">
+                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dh8-eq-hID">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="999集" image="XMGFMHomeRecommend.bundle/album_tracks">
+                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XMGFMHomeRecommend.bundle/cell_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="y2n-xK-Mcb">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="36f-mT-n8R"/>
+                            <constraint firstAttribute="width" constant="15" id="mtq-dS-po0"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y2n-xK-Mcb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7T8-aO-EDf"/>
+                    <constraint firstItem="06k-3k-X41" firstAttribute="top" secondItem="j0G-IV-lMc" secondAttribute="bottom" constant="8" id="96y-yf-osV"/>
+                    <constraint firstItem="Dh8-eq-hID" firstAttribute="bottom" secondItem="06k-3k-X41" secondAttribute="bottom" id="EGb-PE-SF2"/>
+                    <constraint firstItem="Dh8-eq-hID" firstAttribute="leading" secondItem="06k-3k-X41" secondAttribute="trailing" constant="8" id="Igt-5h-PuF"/>
+                    <constraint firstItem="Dh8-eq-hID" firstAttribute="top" secondItem="06k-3k-X41" secondAttribute="top" id="Qub-RH-BuX"/>
+                    <constraint firstAttribute="trailing" secondItem="j0G-IV-lMc" secondAttribute="trailing" constant="31" id="TUw-lE-1IR"/>
+                    <constraint firstAttribute="trailing" secondItem="y2n-xK-Mcb" secondAttribute="trailing" constant="8" id="UCy-rm-jjE"/>
+                    <constraint firstItem="j0G-IV-lMc" firstAttribute="top" secondItem="kl3-mn-PYa" secondAttribute="bottom" constant="8" id="ZRq-hi-HHo"/>
+                    <constraint firstItem="ohC-wm-bJq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="e8J-AT-LFk"/>
+                    <constraint firstAttribute="bottom" secondItem="06k-3k-X41" secondAttribute="bottom" constant="8" id="mvN-JT-Nre"/>
+                    <constraint firstItem="ohC-wm-bJq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="r6M-5C-l7g"/>
+                    <constraint firstItem="j0G-IV-lMc" firstAttribute="leading" secondItem="ohC-wm-bJq" secondAttribute="trailing" constant="8" id="sEk-lr-DUr"/>
+                    <constraint firstItem="06k-3k-X41" firstAttribute="leading" secondItem="ohC-wm-bJq" secondAttribute="trailing" constant="8" id="sSn-9y-SQX"/>
+                    <constraint firstAttribute="trailing" secondItem="kl3-mn-PYa" secondAttribute="trailing" constant="31" id="vqh-ad-jtm"/>
+                    <constraint firstItem="kl3-mn-PYa" firstAttribute="leading" secondItem="ohC-wm-bJq" secondAttribute="trailing" constant="8" id="xp8-Jm-tw4"/>
+                    <constraint firstItem="kl3-mn-PYa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="yvh-TF-1da"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="introLabel" destination="j0G-IV-lMc" id="q1Z-jp-2Rf"/>
+                <outlet property="playsCountsBtn" destination="06k-3k-X41" id="ri9-ts-lWS"/>
+                <outlet property="smallImageView" destination="ohC-wm-bJq" id="28o-Y7-owd"/>
+                <outlet property="title" destination="kl3-mn-PYa" id="YEj-h6-ByF"/>
+                <outlet property="tracksBtn" destination="Dh8-eq-hID" id="cBl-0o-3Oa"/>
+            </connections>
+            <point key="canvasLocation" x="123" y="265"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="XMGFMHomeRecommend.bundle/album_play" width="8" height="10"/>
+        <image name="XMGFMHomeRecommend.bundle/album_tracks" width="8" height="10"/>
+        <image name="XMGFMHomeRecommend.bundle/cell_arrow" width="8" height="10"/>
+    </resources>
+</document>

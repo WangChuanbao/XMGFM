@@ -1,0 +1,6 @@
+framework module XMGFMMenueView {
+  umbrella header "XMGFMMenueView-umbrella.h"
+
+  export *
+  module * { export * }
+}

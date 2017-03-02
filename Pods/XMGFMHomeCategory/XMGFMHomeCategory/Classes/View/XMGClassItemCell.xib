@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClassItemCell" id="tOU-uZ-j8v" customClass="XMGClassItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tOU-uZ-j8v" id="gtg-OU-DPj">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="find_category_rank_line" translatesAutoresizingMaskIntoConstraints="NO" id="82j-tg-ALK">
+                        <rect key="frame" x="159" y="0.0" width="1" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="vUP-LK-UBZ"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezb-QA-iBO" customClass="XMGClassCellBtn">
+                        <rect key="frame" x="0.0" y="0.0" width="159.5" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwU-hD-BHX">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="cnd-T5-OIE"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtz-Ok-Lka" customClass="XMGClassCellBtn">
+                        <rect key="frame" x="160" y="0.0" width="159.5" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gtz-Ok-Lka" secondAttribute="trailing" id="4zj-9b-Kyl"/>
+                    <constraint firstItem="ezb-QA-iBO" firstAttribute="top" secondItem="gtg-OU-DPj" secondAttribute="top" id="DJg-YY-uQk"/>
+                    <constraint firstAttribute="bottom" secondItem="ezb-QA-iBO" secondAttribute="bottom" id="ECI-ye-XOX"/>
+                    <constraint firstItem="ezb-QA-iBO" firstAttribute="leading" secondItem="gtg-OU-DPj" secondAttribute="leading" id="HEP-WC-SGy"/>
+                    <constraint firstAttribute="bottom" secondItem="jwU-hD-BHX" secondAttribute="bottom" id="HtO-3c-y1S"/>
+                    <constraint firstItem="gtz-Ok-Lka" firstAttribute="width" secondItem="ezb-QA-iBO" secondAttribute="width" id="JDJ-3H-oZN"/>
+                    <constraint firstAttribute="bottom" secondItem="82j-tg-ALK" secondAttribute="bottom" id="Ja1-xO-pRE"/>
+                    <constraint firstItem="82j-tg-ALK" firstAttribute="top" secondItem="gtg-OU-DPj" secondAttribute="top" id="Mw5-o7-P4Q"/>
+                    <constraint firstItem="82j-tg-ALK" firstAttribute="centerX" secondItem="gtg-OU-DPj" secondAttribute="centerX" id="QSp-N5-qA2"/>
+                    <constraint firstItem="gtz-Ok-Lka" firstAttribute="height" secondItem="ezb-QA-iBO" secondAttribute="height" id="Tdf-wj-wJ4"/>
+                    <constraint firstAttribute="trailing" secondItem="jwU-hD-BHX" secondAttribute="trailing" id="hBO-LC-c7H"/>
+                    <constraint firstItem="82j-tg-ALK" firstAttribute="leading" secondItem="ezb-QA-iBO" secondAttribute="trailing" id="jtY-P1-I60"/>
+                    <constraint firstItem="gtz-Ok-Lka" firstAttribute="top" secondItem="gtg-OU-DPj" secondAttribute="top" id="pbd-9S-8eM"/>
+                    <constraint firstItem="jwU-hD-BHX" firstAttribute="leading" secondItem="gtg-OU-DPj" secondAttribute="leading" id="rXJ-g5-alg"/>
+                    <constraint firstAttribute="bottom" secondItem="gtz-Ok-Lka" secondAttribute="bottom" id="t38-bE-sQ0"/>
+                    <constraint firstItem="gtz-Ok-Lka" firstAttribute="leading" secondItem="82j-tg-ALK" secondAttribute="trailing" id="tiC-wX-PHu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftBtn" destination="ezb-QA-iBO" id="U3u-fE-IrK"/>
+                <outlet property="rightBtn" destination="gtz-Ok-Lka" id="9OD-pt-Xz3"/>
+            </connections>
+            <point key="canvasLocation" x="204" y="-138"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="find_category_rank_line" width="1" height="48"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module XMGFMAnchor {
+  umbrella header "XMGFMAnchor-umbrella.h"
+
+  export *
+  module * { export * }
+}

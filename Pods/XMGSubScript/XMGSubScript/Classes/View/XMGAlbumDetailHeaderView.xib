@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMGAlbumDetailHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="205"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XMGSubScript.bundle/find_albumcell_cover_bg" translatesAutoresizingMaskIntoConstraints="NO" id="sfi-WS-z7I">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Spe-Q0-uzj"/>
+                        <constraint firstAttribute="height" constant="100" id="naN-LM-HeE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小码哥聊科技" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUf-jG-Flc">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="主播：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfP-tv-sa8">
+                    <frame key="frameInset" minX="130" minY="42" width="36" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzn-ph-Xo7">
+                    <frame key="frameInset" minX="166" minY="36" width="72" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="小码哥聊科技">
+                        <color key="titleColor" red="0.12549019610000001" green="0.58039215690000001" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="gotoSubPageButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Zcf-0T-kXO"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="播放：8888.9万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsu-LW-KWn">
+                    <frame key="frameInset" minX="130" minY="63" width="89" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="分类：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gM-zj-oZo">
+                    <frame key="frameInset" minX="130" minY="84" width="36" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeQ-65-gTp">
+                    <frame key="frameInset" minX="166" minY="78" width="35" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="IT科技">
+                        <color key="titleColor" red="0.12549019610000001" green="0.58039215690000001" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="gotoSubPageButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="nrd-re-6Ad"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icl-98-bWG">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ewZ-2V-Bmb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="XMGSubScript.bundle/newAblum_free_download">
+                        <color key="titleColor" red="0.5450980392" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="gotoSubPageButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="2Gt-8e-1tV"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRp-RY-aA7">
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="e1P-Ua-Wv1"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcp-rp-J57">
+                    <color key="backgroundColor" red="0.54509803921568623" green="0.76470588235294112" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="sqp-iW-7Q0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="订阅专辑"/>
+                    <state key="selected" title="已订阅"/>
+                    <connections>
+                        <action selector="gotoSubPageButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="CYf-M4-ykI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CeQ-65-gTp" firstAttribute="centerY" secondItem="8gM-zj-oZo" secondAttribute="centerY" id="6eB-qF-igH"/>
+                <constraint firstItem="8gM-zj-oZo" firstAttribute="top" secondItem="fsu-LW-KWn" secondAttribute="bottom" constant="10" id="8mP-kd-p15"/>
+                <constraint firstItem="fsu-LW-KWn" firstAttribute="leading" secondItem="TfP-tv-sa8" secondAttribute="leading" id="9es-RC-b45"/>
+                <constraint firstItem="CeQ-65-gTp" firstAttribute="leading" secondItem="8gM-zj-oZo" secondAttribute="trailing" id="A1a-Oh-d2W"/>
+                <constraint firstAttribute="trailing" secondItem="sRp-RY-aA7" secondAttribute="trailing" id="B6O-Ek-LlI"/>
+                <constraint firstItem="VUf-jG-Flc" firstAttribute="leading" secondItem="sfi-WS-z7I" secondAttribute="trailing" constant="15" id="E4U-q3-OFI"/>
+                <constraint firstItem="fsu-LW-KWn" firstAttribute="top" secondItem="zzn-ph-Xo7" secondAttribute="bottom" id="FRW-8e-Zsk"/>
+                <constraint firstItem="vcp-rp-J57" firstAttribute="top" secondItem="sfi-WS-z7I" secondAttribute="bottom" constant="30" id="Fpb-gU-CjK"/>
+                <constraint firstItem="Icl-98-bWG" firstAttribute="top" secondItem="vcp-rp-J57" secondAttribute="top" id="Iux-GQ-R3J"/>
+                <constraint firstItem="sRp-RY-aA7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KzX-A1-p1r"/>
+                <constraint firstItem="sfi-WS-z7I" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="LUQ-SC-Y3X"/>
+                <constraint firstItem="VUf-jG-Flc" firstAttribute="top" secondItem="sfi-WS-z7I" secondAttribute="top" id="Oky-ib-9l9"/>
+                <constraint firstItem="sRp-RY-aA7" firstAttribute="top" secondItem="Icl-98-bWG" secondAttribute="bottom" constant="20" id="RAe-em-1BN"/>
+                <constraint firstItem="CeQ-65-gTp" firstAttribute="top" secondItem="fsu-LW-KWn" secondAttribute="bottom" id="YGQ-VY-tfz"/>
+                <constraint firstItem="zzn-ph-Xo7" firstAttribute="leading" secondItem="TfP-tv-sa8" secondAttribute="trailing" id="dv9-s5-CMD"/>
+                <constraint firstItem="zzn-ph-Xo7" firstAttribute="centerY" secondItem="TfP-tv-sa8" secondAttribute="centerY" id="gZV-eF-7hV"/>
+                <constraint firstItem="vcp-rp-J57" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="jKT-RX-VXx"/>
+                <constraint firstAttribute="trailing" secondItem="Icl-98-bWG" secondAttribute="trailing" constant="15" id="l6v-Fa-EaD"/>
+                <constraint firstItem="Icl-98-bWG" firstAttribute="height" secondItem="vcp-rp-J57" secondAttribute="height" id="lYy-dI-VWU"/>
+                <constraint firstItem="8gM-zj-oZo" firstAttribute="leading" secondItem="fsu-LW-KWn" secondAttribute="leading" id="oJH-j4-Qyp"/>
+                <constraint firstItem="Icl-98-bWG" firstAttribute="width" secondItem="vcp-rp-J57" secondAttribute="width" id="pbl-ca-TRh"/>
+                <constraint firstItem="Icl-98-bWG" firstAttribute="leading" secondItem="vcp-rp-J57" secondAttribute="trailing" constant="15" id="sWg-Rb-3TF"/>
+                <constraint firstItem="TfP-tv-sa8" firstAttribute="top" secondItem="VUf-jG-Flc" secondAttribute="bottom" constant="10" id="w9G-yH-4vd"/>
+                <constraint firstAttribute="trailing" secondItem="VUf-jG-Flc" secondAttribute="trailing" constant="15" id="wCY-OL-rCo"/>
+                <constraint firstItem="TfP-tv-sa8" firstAttribute="leading" secondItem="VUf-jG-Flc" secondAttribute="leading" id="ywI-oC-Obt"/>
+                <constraint firstItem="sfi-WS-z7I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="z46-wj-8QM"/>
+                <constraint firstItem="8gM-zj-oZo" firstAttribute="centerY" secondItem="CeQ-65-gTp" secondAttribute="centerY" id="zkU-rY-qzf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="8mP-kd-p15"/>
+                    <exclude reference="6eB-qF-igH"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="categoryNameBtn" destination="CeQ-65-gTp" id="BEC-aC-QFr"/>
+                <outlet property="coverSmallImageView" destination="sfi-WS-z7I" id="FSu-9i-76p"/>
+                <outlet property="downloadButton" destination="Icl-98-bWG" id="kRj-ob-80B"/>
+                <outlet property="nickNameBtn" destination="zzn-ph-Xo7" id="KxF-DN-aYg"/>
+                <outlet property="playTimesLabel" destination="fsu-LW-KWn" id="chR-af-yFr"/>
+                <outlet property="subscribeButton" destination="vcp-rp-J57" id="gnD-YO-fEO"/>
+                <outlet property="titleLabel" destination="VUf-jG-Flc" id="EQB-kW-Llm"/>
+            </connections>
+            <point key="canvasLocation" x="331.5" y="-229.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="XMGSubScript.bundle/find_albumcell_cover_bg" width="90" height="90"/>
+        <image name="XMGSubScript.bundle/newAblum_free_download" width="90" height="90"/>
+    </resources>
+</document>

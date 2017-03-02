@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMGPlayListSheetView">
+            <rect key="frame" x="0.0" y="0.0" width="303" height="279"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kBW-VV-pV4">
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Zhb-ZA-oVS">
+                        <frame key="frameInset"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hT-0Z-KDs">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toI-Eb-WA1">
+                            <state key="normal" image="XMGFMPlayer.bundle/np_playlist_order">
+                                <color key="titleColor" red="1" green="0.99698277759999998" blue="0.96215569450000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="playModel:" destination="iN0-l3-epB" eventType="touchUpInside" id="v2q-Pc-j9g"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0If-f1-f4V"/>
+                        <constraint firstItem="toI-Eb-WA1" firstAttribute="centerY" secondItem="5hT-0Z-KDs" secondAttribute="centerY" id="5CF-lA-UJQ"/>
+                        <constraint firstItem="toI-Eb-WA1" firstAttribute="leading" secondItem="5hT-0Z-KDs" secondAttribute="leading" constant="10" id="uJa-a1-4KZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iu-pF-TJ4">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="of9-Ef-lf6">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="关闭"/>
+                            <connections>
+                                <action selector="close" destination="iN0-l3-epB" eventType="touchUpInside" id="MjI-Fe-flX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="of9-Ef-lf6" firstAttribute="leading" secondItem="1iu-pF-TJ4" secondAttribute="leading" id="9Ea-2r-IbY"/>
+                        <constraint firstAttribute="bottom" secondItem="of9-Ef-lf6" secondAttribute="bottom" id="9Zq-Am-5vY"/>
+                        <constraint firstAttribute="trailing" secondItem="of9-Ef-lf6" secondAttribute="trailing" id="RkW-bh-BYo"/>
+                        <constraint firstItem="of9-Ef-lf6" firstAttribute="top" secondItem="1iu-pF-TJ4" secondAttribute="top" id="dz4-pg-Ume"/>
+                        <constraint firstAttribute="height" constant="40" id="uHt-rB-ywQ"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5cf-ZJ-Arj">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="eO3-8d-s15"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="sAL-A4-wYi"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="kBW-VV-pV4" secondAttribute="bottom" id="15d-aB-7bO"/>
+                <constraint firstItem="5cf-ZJ-Arj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3Cc-ch-TcJ"/>
+                <constraint firstAttribute="trailing" secondItem="5cf-ZJ-Arj" secondAttribute="trailing" id="7kA-Ef-IHE"/>
+                <constraint firstAttribute="trailing" secondItem="kBW-VV-pV4" secondAttribute="trailing" id="9xg-nc-lPi"/>
+                <constraint firstItem="kBW-VV-pV4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BCs-U8-Qpg"/>
+                <constraint firstItem="5hT-0Z-KDs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EEN-8R-GIp"/>
+                <constraint firstAttribute="trailing" secondItem="5hT-0Z-KDs" secondAttribute="trailing" id="FWp-Uh-img"/>
+                <constraint firstItem="kBW-VV-pV4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IvP-A1-8Eq"/>
+                <constraint firstItem="5cf-ZJ-Arj" firstAttribute="top" secondItem="5hT-0Z-KDs" secondAttribute="bottom" id="NPx-6A-JSQ"/>
+                <constraint firstAttribute="bottom" secondItem="1iu-pF-TJ4" secondAttribute="bottom" id="amx-zX-tRD"/>
+                <constraint firstItem="1iu-pF-TJ4" firstAttribute="top" secondItem="5cf-ZJ-Arj" secondAttribute="bottom" id="nFx-tb-ae2"/>
+                <constraint firstItem="5hT-0Z-KDs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pfM-q2-cpY"/>
+                <constraint firstItem="1iu-pF-TJ4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qKQ-g0-fL1"/>
+                <constraint firstAttribute="trailing" secondItem="1iu-pF-TJ4" secondAttribute="trailing" id="xPu-Y4-Pyu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="5cf-ZJ-Arj" id="N1s-jP-AKw"/>
+            </connections>
+            <point key="canvasLocation" x="340.5" y="-106.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="XMGFMPlayer.bundle/np_playlist_order" width="404" height="404"/>
+    </resources>
+</document>

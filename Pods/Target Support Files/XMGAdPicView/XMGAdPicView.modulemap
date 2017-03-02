@@ -1,0 +1,6 @@
+framework module XMGAdPicView {
+  umbrella header "XMGAdPicView-umbrella.h"
+
+  export *
+  module * { export * }
+}
